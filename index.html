@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Albert's Space Dashboard</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <header>
+        <h1>Albert's <span class="text-accent">Space</span> Dashboard</h1>
+    </header>
+
+    <main class="dashboard-grid">
+
+        <section id="apod" class="widget">
+            <div class="loader"></div>
+            
+            <div class="widget-content">
+                <h2>Astronomy Picture of the Day</h2>
+                <img id="apod-image" src="" alt="">
+                <h3 id="apod-title"></h3>
+                <p id="apod-explanation"></p>
+            </div>
+        </section>
+
+        <section id="next-launch" class="widget">
+            <div class="loader"></div>
+            
+            <div class="widget-content">
+                <h2>Next SpaceX Launch</h2>
+                <h3 id="launch-name"></h3>
+                <p class="widget-label">Launch Date (UTC)</p>
+                <p id="launch-date" class="widget-data"></p>
+                <p class="widget-label">Details</p>
+                <p id="launch-details"></p>
+            </div>
+        </section>
+
+        <section id="crew" class="widget">
+            <div class="loader"></div>
+            
+            <div class="widget-content">
+                <h2>Active SpaceX Crew</h2>
+                <ul id="crew-list">
+                    </ul>
+            </div>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
